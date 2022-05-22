@@ -1,0 +1,461 @@
+:root {
+    --primary-background-color: #fe043c;
+    --color-text-h: #2e266f;
+    --color-white: #ffffff;
+    --color-text-p: #707070;
+    --background-color-nhat: #fff5ec;
+    --background-color-dam: #ffedde;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-32: 32px;
+    --font-size-30: 30px;
+    --font-size-48: 48px;
+    --font-size-24: 24px;
+    --font-size-36: 36px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 200px;
+    margin: 0;
+    color: var(--color-text-h);
+    opacity: 0.05;
+    text-transform: capitalize;
+    font-weight: 900;
+    line-height: 300px;
+    height: 222px;
+}
+
+h2 {
+    font-size: 72px;
+    margin: 0;
+    color: var(--color-text-h);
+}
+
+h3 {
+    font-size: var(--font-size-48);
+    color: var(--color-text-h);
+    font-weight: 500;
+    line-height: 62px;
+    margin: auto 0;
+}
+
+h4 {
+    font-size: var(--font-size-24);
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--color-text-h);
+}
+
+.img {
+    width: 100%;
+}
+
+.color-primary {
+    color: var(--primary-background-color);
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+/*header*/
+
+header {
+    background-color: var(--background-color-nhat);
+    padding: 0 135px;
+    height: 1048px;
+    width: 1920px;
+    position: relative;
+}
+
+
+/*header-wrapper*/
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header-wrapper--nav {
+    margin-left: -20%;
+}
+
+.header-wrapper nav ul {
+    list-style-type: none;
+}
+
+.header-wrapper nav ul li {
+    display: inline-block;
+    margin-left: -5px;
+    font-size: var(--font-size-16);
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-text-h);
+    margin-right: 40px;
+    padding-left: 0;
+    margin-top: 31px;
+}
+
+.header-wrapper nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: var(--color-text-h);
+}
+
+.header-wrapper .header__user-panel {
+    width: 114px;
+    margin: 33px 0;
+    position: relative;
+}
+
+.header-wrapper .header__user-panel .user-panel__text {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: var(--color-white);
+}
+
+
+/*slider-wrapper*/
+
+.slider-wrapper {
+    display: flex;
+}
+
+.slider-wrapper__item {
+    width: 50%;
+}
+
+.slider-wrapper__item--padding {
+    padding-right: 95px;
+}
+
+.form--size {
+    height: 90px;
+    width: 670px;
+}
+
+form.example input[type="text"] {
+    padding: 10px;
+    font-size: var(--font-size-16);
+    border: none;
+    float: left;
+    width: 70%;
+    background: var(--color-white);
+    height: 100%;
+}
+
+form.example button {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background: var(--primary-background-color);
+    color: var(--color-white);
+    font-size: var(--font-size-16);
+    border-radius: 60px 0px 0px 0px;
+    border-left: none;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 100%;
+}
+
+form.example button:hover {
+    background: #da0b92;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.slider-wrapper__item {
+    position: relative;
+}
+
+.slider-wrapper__item--z_index {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+}
+
+.slider-wrapper__item--position {
+    position: absolute;
+    top: -34%;
+    width: 584px;
+    height: 900px;
+    z-index: 0;
+    left: 20%;
+}
+
+.slider-wrapper__location {
+    position: absolute;
+    width: 280px;
+    height: 65px;
+    left: 0px;
+    top: 892px;
+    background: var(--primary-background-color);
+    border-radius: 0px 100px 100px 0px;
+    color: var(--color-white);
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: var(--font-size-24);
+}
+
+.slider-wrapper__location__text {
+    font-size: var(--font-size-30);
+    padding-left: 20px;
+}
+
+.carousel {
+    position: absolute;
+    font-size: var(--font-size-36);
+    top: 971px;
+    right: 135px;
+}
+
+.arrow--padding {
+    padding-right: 40px;
+}
+
+
+/*food-item*/
+
+.food-item {
+    background-color: var(--background-color-nhat);
+}
+
+.food-item__title {
+    padding-top: 218px;
+    padding-left: 135px;
+    margin-bottom: 158px;
+}
+
+.border-left-height {
+    border-left: 20px solid var(--primary-background-color);
+    padding-left: 30px;
+}
+
+.food-item__title h3 {
+    width: 636px;
+}
+
+.food-item__title p {
+    margin-right: 336px;
+    margin-left: 149px;
+    font-size: var(--font-size-14);
+    line-height: 24px;
+    color: var(--color-text-p);
+    width: 609px;
+}
+
+
+/*food-item-content*/
+
+.food-item__wrapper {
+    padding-bottom: 211px;
+}
+
+.food-item__wrapper__content {
+    position: relative;
+    flex: 3;
+    margin-right: 40px;
+}
+
+.foot-item__content__title {
+    position: absolute;
+    background-color: var(--primary-background-color);
+    opacity: 0.7;
+    border-radius: 0px 0px 20px 20px;
+    bottom: 0px;
+    color: var(--color-white);
+    padding: 40px 192px 88px 60px;
+}
+
+.foot-item__content__title .foot-item__content__title--font-size {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.icon--font-size {
+    font-size: var(--font-size-24);
+}
+
+.food-item__wrapper__content__item {
+    margin: 50% 0 50% 100px;
+}
+
+.food-item__wrapper__content__item p {
+    color: var(--primary-background-color);
+}
+
+
+/*advance-booking*/
+
+#advance-booking {
+    background-color: var(--background-color-dam);
+    position: relative;
+    height: 1090px;
+}
+
+.advance-booking__img-left {
+    position: absolute;
+    width: auto;
+    height: 138%;
+    left: 0px;
+    top: -22%;
+    z-index: 2;
+}
+
+.advance-booking__content {
+    border: 1px solid rebeccapurple;
+    height: 560px;
+    width: 1230px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: var(--color-white);
+    text-align: center;
+    z-index: 1;
+    padding: 0 273px 0 413px;
+}
+
+.advance-booking__img-right {
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    z-index: 2;
+}
+
+.border-top-width {
+    border-top: 20px solid var(--primary-background-color);
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.form--size-s {
+    height: 90px;
+    width: 544px;
+    margin: 0;
+    border: 1px solid var(--primary-background-color);
+}
+
+.advance-booking__content__box {
+    justify-content: center;
+}
+
+.advance-booking__content__box__item {
+    padding: 24px;
+}
+
+
+/*our-services*/
+
+#our-services {
+    background-color: var(--background-color-nhat);
+    padding-top: 167px;
+}
+
+.our-services__title h3 {
+    width: 350px;
+}
+
+.our-services__title p {
+    margin-right: 336px;
+    margin-left: 149px;
+    font-size: var(--font-size-14);
+    line-height: 24px;
+    color: var(--color-text-p);
+    width: 609px;
+}
+
+.our-services__content {
+    padding: 255px 135px;
+}
+
+.our-services__title__half {
+    flex: 2;
+}
+
+.our-services__title__half__content {}
+
+.our-services__title__half__content__img-box {
+    background-color: var(--background-color-dam);
+    padding: 94px;
+}
+
+.our-services__title__half__text {
+    margin: auto 0 auto 161px;
+}
+
+.our-services__title__half__text p {
+    font-size: var(--font-size-14);
+}
+
+.flex-direction--reverse {
+    flex-direction: row-reverse;
+}
+
+.half__text--margin-right {
+    margin: auto 161px auto 0;
+}
+
+.our-services__title__half__right {
+    background-color: var(--background-color-dam);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/*Explore-our-foods*/
+
+#Explore-our-foods {
+    background-color: var(--background-color-nhat);
+}
+
+.Explore-our-foods__title {
+    text-align: center;
+}
+
+.Explore-our-foods__title p {
+    width: 604px;
+    margin: 30px auto 60px auto;
+}
+
+.flex-item {
+    width: 530px;
+    margin: 15px;
+}
+
+.Explore-our-foods__content {
+    margin: 0 100px;
+    flex-wrap: wrap;
+}
+
+.Explore-our-foods__item {
+    background-color: var(--color-white);
+    border-radius: 25px;
+}
