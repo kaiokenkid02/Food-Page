@@ -327,7 +327,6 @@ form.example::after {
 }
 
 .advance-booking__content {
-    border: 1px solid rebeccapurple;
     height: 560px;
     width: 1230px;
     position: absolute;
@@ -378,6 +377,7 @@ form.example::after {
 
 .our-services__title h3 {
     width: 350px;
+    margin-left: 135px;
 }
 
 .our-services__title p {
@@ -393,11 +393,14 @@ form.example::after {
     padding: 255px 135px;
 }
 
-.our-services__title__half {
-    flex: 2;
+.our-services__title__half__left {
+    float: left;
+    width: 50%;
 }
 
-.our-services__title__half__content {}
+.clear {
+    clear: both;
+}
 
 .our-services__title__half__content__img-box {
     background-color: var(--background-color-dam);
@@ -422,11 +425,24 @@ form.example::after {
 
 .our-services__title__half__right {
     background-color: var(--background-color-dam);
-    height: 100%;
-    width: 100%;
     padding: 20px;
     text-align: center;
-    display: inline-block;
+    margin: auto 0 auto 100px;
+    float: right;
+    width: 40%;
+}
+
+.our-services__title__half__right img {
+    padding: 163px 150px 20px;
+}
+
+.our-services__title__half__right h4 {
+    padding-bottom: 20px;
+}
+
+.our-services__title__half__right p {
+    margin: 0 auto 80px;
+    width: 199px;
 }
 
 
@@ -434,6 +450,7 @@ form.example::after {
 
 #Explore-our-foods {
     background-color: var(--background-color-nhat);
+    padding-bottom: 145px;
 }
 
 .Explore-our-foods__title {
@@ -458,4 +475,124 @@ form.example::after {
 .Explore-our-foods__item {
     background-color: var(--color-white);
     border-radius: 25px;
+}
+
+.Explore-our-foods__item__content {
+    padding: 30px;
+}
+
+.float--right {
+    float: right;
+}
+
+.color-primary {
+    color: var(--primary-background-color);
+    font-size: var(--font-size-24);
+    font-weight: 700;
+}
+
+.color-h {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-text-h);
+}
+
+
+/* Dowload-apps*/
+
+#dowload-apps {
+    background-color: var(--background-color-dam);
+    height: 1090px;
+}
+
+.dowload-apps__title {
+    position: relative;
+    height: 100%;
+}
+
+.our-services__title__half {
+    margin: auto 135px;
+}
+
+.width--30 {
+    width: 30%;
+}
+
+.our-services__title__half .google__play,
+.our-services__title__half p {
+    padding-left: 55px;
+}
+
+.google__wrapper {
+    color: var(--color-white);
+    padding-left: 40px;
+}
+
+.google__play {
+    background-color: black;
+    margin-left: 20px;
+    padding-left: 0;
+    border-radius: 10px;
+}
+
+.our-services__title__half__raucai {
+    position: absolute;
+    width: 677px;
+    height: 687px;
+    transform: rotate(-15.33deg);
+    z-index: 0;
+    left: 31%;
+    top: 38%;
+}
+
+.our-services__title__half__phone {
+    width: 653px;
+    height: 1144px;
+    z-index: 2;
+    top: 40px;
+    right: 230px;
+    position: absolute;
+}
+
+
+/*footer*/
+
+#footer {
+    position: relative;
+    background-color: var(--background-color-nhat);
+    overflow: hidden;
+}
+
+.footer__img {
+    position: absolute;
+    width: 750px;
+    height: 963px;
+    left: -8%;
+    top: 72px;
+}
+
+.footer__content {
+    display: inline-block;
+    text-align: center;
+    margin: 272px 29%;
+}
+
+.footer__content .footer__content__title {
+    font-weight: 400;
+    font-size: var(--font-size-36);
+    line-height: 48px;
+    color: var(--color-text-h);
+    margin: 0 auto;
+    width: 534px;
+    text-align: center;
+}
+
+.footer__content ul {
+    list-style-type: none;
+}
+
+.footer__content ul li {
+    display: inline-block;
+    margin: 0 20px;
 }
