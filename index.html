@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/fontawesome.min.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
@@ -16,7 +19,7 @@
     <!-- header -->
     <header>
         <div class="header-wrapper">
-            <h2 class="color-primary">expice</h2>
+            <h2 class="color-primary-s">expice</h2>
             <nav class="header-wrapper--nav">
                 <ul>
                     <li>
@@ -47,12 +50,12 @@
                 <!-- The form search -->
                 <form class="example form--size" action="/action_page.php">
                     <input type="text" placeholder="Search.." name="search2" />
-                    <button type="submit">GO</button>
+                    <button class="button--border" type="submit">GO</button>
                 </form>
             </div>
             <div class="slider-wrapper__item">
                 <img class="img slider-wrapper__item--z_index" src="./img/slide-dia.png" alt="dia_trai_cay" />
-                <img class="img slider-wrapper__item--position" src="./img/rau_dĩa-slider.png" alt="rau" />
+                <img class="slider-wrapper__item--position img--small" src="./img/rau_dĩa-slider.png" alt="rau" />
             </div>
         </div>
         <div class="slider-wrapper__location">
@@ -64,6 +67,7 @@
         ></span>
             <span><i class="fa-solid fa-circle-arrow-right"></i></span>
         </div>
+        <div class="color-side"></div>
     </header>
     <!-- food-item -->
     <section class="food-item">
@@ -89,6 +93,7 @@
                         <span>New Market</span>
                     </div>
                 </div>
+                <div class="foot-item__booking">Book Now</div>
             </div>
 
             <div class="food-item__wrapper__content">
@@ -103,6 +108,7 @@
                         <span>New Market</span>
                     </div>
                 </div>
+                <div class="foot-item__booking">Book Now</div>
             </div>
             <div class="food-item__wrapper__content">
                 <div class="food-item__wrapper__content__item">
@@ -118,11 +124,9 @@
         <div class="advance-booking__content">
             <h3 class="border-top-width">advance booking</h3>
             <!-- The form search -->
-            <form class="example form--size-s" action="/action_page.php">
+            <form class="example form--size" action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search2" />
-                <!-- <button style="width: 128px; height: 62px" ; type="submit btn--size-s"> -->
-                <!-- GO -->
-                <!-- </button> -->
+                <button class="button--small" type="submit">GO</button>
             </form>
 
             <div class="advance-booking__content__box flex-container">
@@ -153,7 +157,7 @@
                 ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.
             </p>
         </div>
-        <div class="our-services__content">
+        <div class="our-services__content flex-container">
             <div class="our-services__title__half__left">
                 <div class="our-services__title__half__content flex-container">
                     <img class="our-services__title__half__content__img-box" src="./img/Icon_01.png" alt="icon_01" />
@@ -170,16 +174,19 @@
                     </div>
                 </div>
             </div>
-
-            <div class="our-services__title__half__right">
-                <img class="" src="./img/xemay.png" alt="icon_02" />
-                <div>
-                    <h4>Advance Table Booking</h4>
-                    <p>Lorem ipsum dolor Sit Amet.Consectetur Adipiscing Elit.</p>
+            <div class="our-services__title__half__left background__margin">
+                <div class="our-services__title__half__right__content">
+                    <img class="" src="./img/xemay.png" alt="icon_02" />
+                    <div>
+                        <h4>free home delivery at your door steps</h4>
+                        <p>Lorem ipsum dolor Sit Amet.Consectetur Adipiscing Elit.</p>
+                    </div>
                 </div>
+                <!-- <div class="clear"></div> -->
             </div>
             <div class="clear"></div>
         </div>
+        <div class="clear"></div>
     </section>
     <!-- Explore-our-foods -->
     <section id="Explore-our-foods">
@@ -255,6 +262,7 @@
                             <span>GET IT ON </span><br />
                             <span>Google Play</span>
                         </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="google__play">
                         <i class="fa-brands fa-apple"></i>
@@ -275,19 +283,27 @@
     <footer id="footer">
         <img class="img footer__img" src="./img/Group 86 1.png" alt="la canh" />
         <div class="footer__content">
-            <p class="footer__content__title">
-                Get notified<br /> about new amazing products
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus.
-            </p>
-            <button class="footer-email" aria-placeholder="E-mail"></button>
-            <ul>
-                <li>Product</li>
-                <li>Company</li>
-                <li>Learn More</li>
-                <li>Get In Touch</li>
-            </ul>
+            <div class="footer__content__title">
+                <p class="footer__content__title__p">
+                    Get notified<br /> about new amazing products
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus.
+                </p>
+                <!-- The form search -->
+                <form class="example example__email" action="/action_page.php">
+                    <input class="form__input" type="text" placeholder="Search.." name="search2" />
+                    <label for="submit">
+              <img class="tron__mui-ten" src="./img/Vector.png" alt="muiten" />
+            </label>
+                </form>
+                <ul>
+                    <li>Product</li>
+                    <li>Company</li>
+                    <li>Learn More</li>
+                    <li>Get In Touch</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

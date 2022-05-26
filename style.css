@@ -20,10 +20,9 @@
 
 body {
     margin: 0;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.5;
     padding: 0;
-    max-width: 1920px;
     overflow-x: hidden;
 }
 
@@ -34,7 +33,7 @@ h1 {
     opacity: 0.05;
     text-transform: capitalize;
     font-weight: 900;
-    line-height: 300px;
+    /* line-height: 300px; */
     height: 222px;
 }
 
@@ -64,12 +63,16 @@ h4 {
     width: 100%;
 }
 
-.color-primary {
+.color-primary-s {
     color: var(--primary-background-color);
 }
 
 .flex-container {
     display: flex;
+}
+
+.clear {
+    clear: both;
 }
 
 
@@ -78,9 +81,9 @@ h4 {
 header {
     background-color: var(--background-color-nhat);
     padding: 0 135px;
-    height: 1048px;
-    width: 1920px;
     position: relative;
+    padding-top: 10px;
+    height: 100%;
 }
 
 
@@ -90,6 +93,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .header-wrapper--nav {
@@ -131,11 +136,25 @@ header {
     color: var(--color-white);
 }
 
+.example {
+    position: relative;
+}
+
+.color-side {
+    background-color: var(--primary-background-color);
+    position: absolute;
+    width: 27%;
+    height: 110%;
+    top: 0;
+    right: 0;
+}
+
 
 /*slider-wrapper*/
 
 .slider-wrapper {
     display: flex;
+    height: 920px;
 }
 
 .slider-wrapper__item {
@@ -156,24 +175,30 @@ form.example input[type="text"] {
     font-size: var(--font-size-16);
     border: none;
     float: left;
-    width: 70%;
+    width: 100%;
     background: var(--color-white);
     height: 100%;
+    box-shadow: 2px 2px 30px 2px #fff5ec;
 }
 
 form.example button {
     float: right;
     width: 20%;
-    padding: 10px;
     background: var(--primary-background-color);
     color: var(--color-white);
-    font-size: var(--font-size-16);
-    border-radius: 60px 0px 0px 0px;
+    font-size: var(--font-size-30);
     border-left: none;
     cursor: pointer;
     border: none;
     width: 200px;
-    height: 100%;
+    height: 90%;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+
+form.example .button--border {
+    border-radius: 60px 0px 0px 0px;
 }
 
 form.example button:hover {
@@ -191,17 +216,17 @@ form.example::after {
 }
 
 .slider-wrapper__item--z_index {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 5%;
 }
 
 .slider-wrapper__item--position {
     position: absolute;
-    top: -34%;
-    width: 584px;
-    height: 900px;
-    z-index: 0;
+    top: -20%;
+    width: 504px;
+    height: 800px;
+    z-index: 1;
     left: 20%;
 }
 
@@ -230,6 +255,8 @@ form.example::after {
     font-size: var(--font-size-36);
     top: 971px;
     right: 135px;
+    color: var(--color-white);
+    z-index: 3;
 }
 
 .arrow--padding {
@@ -254,17 +281,22 @@ form.example::after {
     padding-left: 30px;
 }
 
-.food-item__title h3 {
-    width: 636px;
-}
-
 .food-item__title p {
     margin-right: 336px;
     margin-left: 149px;
     font-size: var(--font-size-14);
     line-height: 24px;
     color: var(--color-text-p);
-    width: 609px;
+}
+
+.foot-item__booking {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    color: var(--primary-background-color);
+    background-color: var(--color-white);
+    padding: 1rem 3.5rem;
+    border-radius: 100px 0px 0px 100px;
 }
 
 
@@ -276,7 +308,7 @@ form.example::after {
 
 .food-item__wrapper__content {
     position: relative;
-    flex: 3;
+    flex: 30%;
     margin-right: 40px;
 }
 
@@ -297,7 +329,8 @@ form.example::after {
 }
 
 .icon--font-size {
-    font-size: var(--font-size-24);
+    font-size: var(--font-size-36);
+    color: var(--primary-background-color);
 }
 
 .food-item__wrapper__content__item {
@@ -327,8 +360,6 @@ form.example::after {
 }
 
 .advance-booking__content {
-    height: 560px;
-    width: 1230px;
     position: absolute;
     top: 50%;
     right: 50%;
@@ -359,6 +390,10 @@ form.example::after {
     border: 1px solid var(--primary-background-color);
 }
 
+form.example .button--small {
+    padding: 1rem 2rem;
+}
+
 .advance-booking__content__box {
     justify-content: center;
 }
@@ -367,12 +402,17 @@ form.example::after {
     padding: 24px;
 }
 
+.advance-booking__content form {
+    margin: 60px 0;
+}
+
 
 /*our-services*/
 
 #our-services {
     background-color: var(--background-color-nhat);
     padding-top: 167px;
+    padding-bottom: 249px;
 }
 
 .our-services__title h3 {
@@ -382,7 +422,7 @@ form.example::after {
 
 .our-services__title p {
     margin-right: 336px;
-    margin-left: 149px;
+    margin-left: 201px;
     font-size: var(--font-size-14);
     line-height: 24px;
     color: var(--color-text-p);
@@ -390,13 +430,14 @@ form.example::after {
 }
 
 .our-services__content {
-    padding: 255px 135px;
+    padding: 255px 135px 0 135px;
 }
 
-.our-services__title__half__left {
+
+/* .our-services__title__half__left {
     float: left;
     width: 50%;
-}
+} */
 
 .clear {
     clear: both;
@@ -423,26 +464,25 @@ form.example::after {
     margin: auto 161px auto 0;
 }
 
-.our-services__title__half__right {
-    background-color: var(--background-color-dam);
-    padding: 20px;
+.our-services__title__half__left {
     text-align: center;
-    margin: auto 0 auto 100px;
-    float: right;
-    width: 40%;
+    flex: 50%;
+    position: relative;
 }
 
-.our-services__title__half__right img {
-    padding: 163px 150px 20px;
+.background__margin {
+    margin-left: 5rem;
+    background-color: var(--background-color-dam);
 }
 
-.our-services__title__half__right h4 {
-    padding-bottom: 20px;
+.our-services__title__half__right__content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
-.our-services__title__half__right p {
-    margin: 0 auto 80px;
-    width: 199px;
+.our-services__title__half__right__content p {
+    border-bottom: 3px solid var(--primary-background-color);
 }
 
 
@@ -519,7 +559,6 @@ form.example::after {
     width: 30%;
 }
 
-.our-services__title__half .google__play,
 .our-services__title__half p {
     padding-left: 55px;
 }
@@ -527,6 +566,7 @@ form.example::after {
 .google__wrapper {
     color: var(--color-white);
     padding-left: 40px;
+    margin: 0 6rem 0 0;
 }
 
 .google__play {
@@ -534,6 +574,17 @@ form.example::after {
     margin-left: 20px;
     padding-left: 0;
     border-radius: 10px;
+    width: 100%;
+}
+
+.google__play i {
+    float: left;
+    font-size: 30px;
+    margin: 8px 20px;
+}
+
+.google__play__item {
+    float: left;
 }
 
 .our-services__title__half__raucai {
@@ -542,7 +593,7 @@ form.example::after {
     height: 687px;
     transform: rotate(-15.33deg);
     z-index: 0;
-    left: 31%;
+    left: 33%;
     top: 38%;
 }
 
@@ -568,24 +619,49 @@ form.example::after {
     position: absolute;
     width: 750px;
     height: 963px;
-    left: -8%;
-    top: 72px;
+    left: 0;
+    top: 10%;
 }
 
 .footer__content {
     display: inline-block;
     text-align: center;
-    margin: 272px 29%;
+    margin: 272px 31%;
 }
 
-.footer__content .footer__content__title {
+.footer__content .footer__content__title__p {
     font-weight: 400;
     font-size: var(--font-size-36);
     line-height: 48px;
     color: var(--color-text-h);
-    margin: 0 auto;
-    width: 534px;
     text-align: center;
+}
+
+.footer__content__title {
+    margin: 2rem 5rem;
+}
+
+.example__email {
+    margin: 4rem;
+}
+
+.form__input {
+    padding: 25px !important;
+    border-radius: 100px !important;
+}
+
+.submit__email {
+    border-radius: 50%;
+}
+
+.tron__mui-ten {
+    background-color: var(--primary-background-color);
+    padding: 1rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    position: absolute;
+    top: 16%;
+    right: 3%;
 }
 
 .footer__content ul {
@@ -595,4 +671,41 @@ form.example::after {
 .footer__content ul li {
     display: inline-block;
     margin: 0 20px;
+}
+
+@media screen and (max-width: 1194px) {
+    h2 {
+        font-size: 60px;
+    }
+    header {
+        padding: 0 30px 0 30px;
+    }
+    .img--small {
+        width: 70%;
+        height: 80%;
+    }
+    .img {
+        width: 90%;
+    }
+    .food-item__title {
+        padding: 160px 0 0 20px;
+    }
+    .food-item__title p {
+        width: 400px;
+        margin-right: 1.5rem;
+    }
+    .advance-booking__img-left {
+        height: 70%;
+        top: 13%;
+    }
+    .advance-booking__img-right {
+        right: -6%;
+        top: 26%;
+    }
+    .advance-booking__img-right img {
+        width: 80%;
+    }
+    .advance-booking__content {
+        padding: 0 100px 0 100px;
+    }
 }
