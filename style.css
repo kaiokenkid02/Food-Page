@@ -80,7 +80,7 @@ h4 {
 
 header {
     background-color: var(--background-color-nhat);
-    padding: 0 135px;
+    padding: 0 7%;
     position: relative;
     padding-top: 10px;
     height: 100%;
@@ -161,13 +161,9 @@ header {
     width: 50%;
 }
 
-.slider-wrapper__item--padding {
-    padding-right: 95px;
-}
-
 .form--size {
-    height: 90px;
-    width: 670px;
+    height: 11%;
+    width: 85%;
 }
 
 form.example input[type="text"] {
@@ -190,7 +186,6 @@ form.example button {
     border-left: none;
     cursor: pointer;
     border: none;
-    width: 200px;
     height: 90%;
     position: absolute;
     top: 6px;
@@ -199,6 +194,7 @@ form.example button {
 
 form.example .button--border {
     border-radius: 60px 0px 0px 0px;
+    width: 200px;
 }
 
 form.example button:hover {
@@ -223,9 +219,9 @@ form.example::after {
 
 .slider-wrapper__item--position {
     position: absolute;
-    top: -20%;
-    width: 504px;
-    height: 800px;
+    top: -150px;
+    width: 72%;
+    height: 80%;
     z-index: 1;
     left: 20%;
 }
@@ -235,7 +231,7 @@ form.example::after {
     width: 280px;
     height: 65px;
     left: 0px;
-    top: 892px;
+    top: 90%;
     background: var(--primary-background-color);
     border-radius: 0px 100px 100px 0px;
     color: var(--color-white);
@@ -253,8 +249,8 @@ form.example::after {
 .carousel {
     position: absolute;
     font-size: var(--font-size-36);
-    top: 971px;
-    right: 135px;
+    top: 85%;
+    right: 4%;
     color: var(--color-white);
     z-index: 3;
 }
@@ -308,7 +304,6 @@ form.example::after {
 
 .food-item__wrapper__content {
     position: relative;
-    flex: 30%;
     margin-right: 40px;
 }
 
@@ -319,7 +314,7 @@ form.example::after {
     border-radius: 0px 0px 20px 20px;
     bottom: 0px;
     color: var(--color-white);
-    padding: 40px 192px 88px 60px;
+    padding: 2% 29% 10% 5%;
 }
 
 .foot-item__content__title .foot-item__content__title--font-size {
@@ -353,9 +348,9 @@ form.example::after {
 .advance-booking__img-left {
     position: absolute;
     width: auto;
-    height: 138%;
+    height: 100%;
     left: 0px;
-    top: -22%;
+    top: 0;
     z-index: 2;
 }
 
@@ -367,14 +362,17 @@ form.example::after {
     background-color: var(--color-white);
     text-align: center;
     z-index: 1;
-    padding: 0 273px 0 413px;
+    height: 50%;
+    width: 70%;
 }
 
 .advance-booking__img-right {
     position: absolute;
     right: 0px;
-    top: 20%;
+    top: 25%;
     z-index: 2;
+    height: 50%;
+    width: auto;
 }
 
 .border-top-width {
@@ -392,6 +390,7 @@ form.example::after {
 
 form.example .button--small {
     padding: 1rem 2rem;
+    width: auto;
 }
 
 .advance-booking__content__box {
@@ -417,7 +416,7 @@ form.example .button--small {
 
 .our-services__title h3 {
     width: 350px;
-    margin-left: 135px;
+    margin-left: 10%;
 }
 
 .our-services__title p {
@@ -445,11 +444,11 @@ form.example .button--small {
 
 .our-services__title__half__content__img-box {
     background-color: var(--background-color-dam);
-    padding: 94px;
+    padding: 14%;
 }
 
 .our-services__title__half__text {
-    margin: auto 0 auto 161px;
+    margin: auto 10% auto 10%;
 }
 
 .our-services__title__half__text p {
@@ -461,7 +460,7 @@ form.example .button--small {
 }
 
 .half__text--margin-right {
-    margin: auto 161px auto 0;
+    margin: auto 10% auto 10%;
 }
 
 .our-services__title__half__left {
@@ -479,6 +478,7 @@ form.example .button--small {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
+    top: -10%;
 }
 
 .our-services__title__half__right__content p {
@@ -498,17 +498,17 @@ form.example .button--small {
 }
 
 .Explore-our-foods__title p {
-    width: 604px;
+    width: 90%;
     margin: 30px auto 60px auto;
 }
 
 .flex-item {
-    width: 530px;
+    width: 45%;
     margin: 15px;
 }
 
 .Explore-our-foods__content {
-    margin: 0 100px;
+    margin: 0 4%;
     flex-wrap: wrap;
 }
 
@@ -547,16 +547,23 @@ form.example .button--small {
 }
 
 .dowload-apps__title {
-    position: relative;
     height: 100%;
 }
 
 .our-services__title__half {
-    margin: auto 135px;
+    width: 40%;
+}
+
+.our-services__title__half--center {
+    margin: auto 0 auto 7%;
 }
 
 .width--30 {
     width: 30%;
+}
+
+.width--70 {
+    width: 70%;
 }
 
 .our-services__title__half p {
@@ -587,22 +594,26 @@ form.example .button--small {
     float: left;
 }
 
+.our-services__title__half--relative {
+    position: relative;
+}
+
 .our-services__title__half__raucai {
     position: absolute;
-    width: 677px;
-    height: 687px;
+    width: auto;
+    height: auto;
     transform: rotate(-15.33deg);
     z-index: 0;
-    left: 33%;
-    top: 38%;
+    left: 0;
+    top: 23%;
 }
 
 .our-services__title__half__phone {
-    width: 653px;
-    height: 1144px;
+    width: auto;
+    height: auto;
     z-index: 2;
-    top: 40px;
-    right: 230px;
+    top: 0;
+    left: 5%;
     position: absolute;
 }
 
@@ -617,7 +628,7 @@ form.example .button--small {
 
 .footer__img {
     position: absolute;
-    width: 750px;
+    width: 38%;
     height: 963px;
     left: 0;
     top: 10%;
@@ -626,7 +637,9 @@ form.example .button--small {
 .footer__content {
     display: inline-block;
     text-align: center;
-    margin: 272px 31%;
+    margin: 10% 22%;
+    position: relative;
+    z-index: 3;
 }
 
 .footer__content .footer__content__title__p {
@@ -673,19 +686,52 @@ form.example .button--small {
     margin: 0 20px;
 }
 
+.header-wrapper--nav label,
+.header-wrapper--nav input {
+    display: none;
+}
+
 @media screen and (max-width: 1194px) {
+    h1 {
+        font-size: 150px;
+    }
     h2 {
         font-size: 60px;
+    }
+    h3 {
+        font-size: var(--font-size-36);
+    }
+    .slider-wrapper__item--padding {
+        position: relative;
+        width: 140%;
+        z-index: 3;
     }
     header {
         padding: 0 30px 0 30px;
     }
-    .img--small {
-        width: 70%;
-        height: 80%;
+    /*Menu*/
+    .header-wrapper--nav ul,
+    .header__user-panel {
+        display: none;
     }
-    .img {
+    .header-wrapper--nav label {
+        display: inline-block;
+    }
+    .fa-bar {
+        color: var(--color-white);
+        font-size: var(--font-size-36);
+    }
+    .form--size {
         width: 90%;
+        position: relative;
+        z-index: 3;
+    }
+    .img--small {
+        width: 66%;
+        height: 26%;
+    }
+    .slider-wrapper__item--position {
+        top: -4%;
     }
     .food-item__title {
         padding: 160px 0 0 20px;
@@ -693,19 +739,142 @@ form.example .button--small {
     .food-item__title p {
         width: 400px;
         margin-right: 1.5rem;
-    }
-    .advance-booking__img-left {
-        height: 70%;
-        top: 13%;
-    }
-    .advance-booking__img-right {
-        right: -6%;
-        top: 26%;
-    }
-    .advance-booking__img-right img {
-        width: 80%;
+        margin-left: 4px;
+        width: 50%;
+        margin-top: 8rem;
     }
     .advance-booking__content {
         padding: 0 100px 0 100px;
+    }
+    /*food item*/
+    .food-item__wrapper__content {
+        margin-right: 17px;
+    }
+    .food-item__wrapper__content__item {
+        margin: 210px 20px 0 10px;
+    }
+    /*advance booking*/
+    .advance-booking__img-left {
+        width: 36%;
+        left: -10%;
+    }
+    .our-services__content {
+        padding: 5rem 1rem;
+    }
+    .our-services__title p {
+        margin-right: 5rem;
+        margin-left: 3rem;
+        margin: 5rem;
+    }
+    .our-services__title__half--center {
+        margin-left: 2rem;
+    }
+    .our-services__title__half__phone {
+        left: -20%;
+    }
+    .our-services__title__half__raucai {
+        width: 60%;
+        top: 37%;
+        left: -19%;
+    }
+    .footer__content__title {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    h1 {
+        font-size: 100px;
+        height: 20%;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    .slider-wrapper__item--padding {
+        font-size: var(--font-size-36);
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .slider-wrapper__item--abulute {
+        top: -18%;
+    }
+    .slider-wrapper {
+        flex-wrap: wrap;
+    }
+    .slider-wrapper .slider-wrapper__item {
+        width: 100%;
+    }
+    .slider-wrapper__location {
+        top: 46%;
+    }
+    .carousel {
+        top: 95%;
+    }
+    /*food item */
+    .food-item__title {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: var(--font-size-36);
+    }
+    .food-item__title p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        width: 100%;
+        margin: 1rem;
+    }
+    .food-item__wrapper {
+        flex-direction: column;
+        margin: 2rem;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .food-item__wrapper__content {
+        margin-bottom: 2rem;
+    }
+    .food-item__wrapper__content__item {
+        margin: 3rem;
+        text-align: center;
+    }
+    .our-services__title {
+        flex-wrap: wrap;
+    }
+    .our-services__content {
+        flex-direction: column;
+    }
+    .flex-item {
+        width: 100%;
+    }
+    .Explore-our-foods__title {
+        padding-top: 23rem;
+    }
+    .our-services__title__half {
+        width: 100%;
+    }
+    .our-services__title__half:last-child {
+        width: 100%;
+    }
+    .dowload-apps__title {
+        flex-wrap: wrap;
+    }
+    .our-services__title__half__phone {
+        top: -40%;
+        left: 8%;
+        width: 73%;
+    }
+    .our-services__title__half__raucai {
+        top: -18%;
+        left: auto;
+    }
+    #footer {
+        padding-top: 10rem;
+    }
+    #dowload-apps {
+        height: 1200px;
+    }
+    .advance-booking__img-right {
+        width: 30%;
     }
 }
