@@ -267,9 +267,9 @@ form.example::after {
 }
 
 .food-item__title {
-    padding-top: 218px;
-    padding-left: 135px;
-    margin-bottom: 158px;
+    padding-top: 20%;
+    padding-left: 8%;
+    margin-bottom: 12%;
 }
 
 .border-left-height {
@@ -278,7 +278,7 @@ form.example::after {
 }
 
 .food-item__title p {
-    margin-right: 336px;
+    margin-right: 20%;
     margin-left: 149px;
     font-size: var(--font-size-14);
     line-height: 24px;
@@ -329,7 +329,7 @@ form.example::after {
 }
 
 .food-item__wrapper__content__item {
-    margin: 50% 0 50% 100px;
+    margin: 18vh 0 18vh 100px;
 }
 
 .food-item__wrapper__content__item p {
@@ -342,15 +342,15 @@ form.example::after {
 #advance-booking {
     background-color: var(--background-color-dam);
     position: relative;
-    height: 1090px;
+    height: 100vh;
 }
 
 .advance-booking__img-left {
     position: absolute;
-    width: auto;
     height: 100%;
-    left: 0px;
+    left: -8%;
     top: 0;
+    width: auto;
     z-index: 2;
 }
 
@@ -378,7 +378,7 @@ form.example::after {
 .border-top-width {
     border-top: 20px solid var(--primary-background-color);
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 10%;
 }
 
 .form--size-s {
@@ -386,6 +386,11 @@ form.example::after {
     width: 544px;
     margin: 0;
     border: 1px solid var(--primary-background-color);
+}
+
+.form--size-m {
+    height: 90px;
+    width: 68%;
 }
 
 form.example .button--small {
@@ -402,7 +407,7 @@ form.example .button--small {
 }
 
 .advance-booking__content form {
-    margin: 60px 0;
+    margin: 5% 0 2% 20%;
 }
 
 
@@ -420,23 +425,17 @@ form.example .button--small {
 }
 
 .our-services__title p {
-    margin-right: 336px;
+    margin-right: 16%;
     margin-left: 201px;
     font-size: var(--font-size-14);
     line-height: 24px;
     color: var(--color-text-p);
-    width: 609px;
+    width: 60%;
 }
 
 .our-services__content {
-    padding: 255px 135px 0 135px;
+    padding: 20% 8% 2% 8%;
 }
-
-
-/* .our-services__title__half__left {
-    float: left;
-    width: 50%;
-} */
 
 .clear {
     clear: both;
@@ -444,7 +443,7 @@ form.example .button--small {
 
 .our-services__title__half__content__img-box {
     background-color: var(--background-color-dam);
-    padding: 14%;
+    padding: 12%;
 }
 
 .our-services__title__half__text {
@@ -485,6 +484,10 @@ form.example .button--small {
     border-bottom: 3px solid var(--primary-background-color);
 }
 
+.our-services__title__half__text h4 {
+    text-align: end;
+}
+
 
 /*Explore-our-foods*/
 
@@ -503,7 +506,7 @@ form.example .button--small {
 }
 
 .flex-item {
-    width: 45%;
+    width: 30%;
     margin: 15px;
 }
 
@@ -573,7 +576,7 @@ form.example .button--small {
 .google__wrapper {
     color: var(--color-white);
     padding-left: 40px;
-    margin: 0 6rem 0 0;
+    margin: 0 2rem 0 0;
 }
 
 .google__play {
@@ -582,6 +585,7 @@ form.example .button--small {
     padding-left: 0;
     border-radius: 10px;
     width: 100%;
+    padding: 8px;
 }
 
 .google__play i {
@@ -604,7 +608,7 @@ form.example .button--small {
     height: auto;
     transform: rotate(-15.33deg);
     z-index: 0;
-    left: 0;
+    right: 49%;
     top: 23%;
 }
 
@@ -613,7 +617,7 @@ form.example .button--small {
     height: auto;
     z-index: 2;
     top: 0;
-    left: 5%;
+    right: 10%;
     position: absolute;
 }
 
@@ -709,6 +713,9 @@ form.example .button--small {
     header {
         padding: 0 30px 0 30px;
     }
+    .flex-item {
+        width: 45%;
+    }
     /*Menu*/
     .header-wrapper--nav ul,
     .header__user-panel {
@@ -744,7 +751,7 @@ form.example .button--small {
         margin-top: 8rem;
     }
     .advance-booking__content {
-        padding: 0 100px 0 100px;
+        padding: 0 10% 0 10%;
     }
     /*food item*/
     .food-item__wrapper__content {
@@ -770,25 +777,57 @@ form.example .button--small {
         margin-left: 2rem;
     }
     .our-services__title__half__phone {
-        left: -20%;
+        top: 16vh;
+        height: 75%;
     }
     .our-services__title__half__raucai {
-        width: 60%;
+        width: 52%;
         top: 37%;
-        left: -19%;
     }
     .footer__content__title {
         margin: 0;
+        padding: 0 6%;
+    }
+    .advance-booking__img-right {
+        width: 30%;
+    }
+    #advance-booking {
+        height: 50rem;
+    }
+    .form--size-m {
+        height: 17%;
+    }
+    #our-services {
+        padding: 0;
+    }
+    .our-services__title__half__content__img-box {
+        padding: 1em;
+    }
+    .our-services__title__half__text {
+        margin: 0;
+    }
+    .our-services__title__half__left {
+        margin: 1%;
+    }
+    .our-services__title__half__right__content {
+        top: -40%;
     }
 }
 
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 767px) {
     h1 {
         font-size: 100px;
         height: 20%;
     }
     h2 {
         font-size: 48px;
+    }
+    form.example .button--border {
+        width: 146px;
+        top: 5%;
+    }
+    .color-side {
+        height: 106%;
     }
     .slider-wrapper__item--padding {
         font-size: var(--font-size-36);
@@ -814,22 +853,29 @@ form.example .button--small {
     .food-item__title {
         flex-direction: column;
         margin-bottom: 0;
+        padding-top: 25%;
     }
     h3 {
         font-size: var(--font-size-36);
+        line-height: var(--font-size-48);
+    }
+    .border-left-height {
+        border-left: 10px solid var(--primary-background-color);
+        padding-left: 10px;
     }
     .food-item__title p {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        width: 100%;
+        width: auto;
         margin: 1rem;
     }
     .food-item__wrapper {
         flex-direction: column;
-        margin: 2rem;
+        margin: 1.5rem;
         margin-right: 0;
         margin-bottom: 0;
+        padding-bottom: 0;
     }
     .food-item__wrapper__content {
         margin-bottom: 2rem;
@@ -843,6 +889,7 @@ form.example .button--small {
     }
     .our-services__content {
         flex-direction: column;
+        padding: 0 1rem;
     }
     .flex-item {
         width: 100%;
@@ -852,29 +899,108 @@ form.example .button--small {
     }
     .our-services__title__half {
         width: 100%;
+        margin: 1rem;
     }
     .our-services__title__half:last-child {
         width: 100%;
     }
     .dowload-apps__title {
         flex-wrap: wrap;
+        padding-top: 3rem;
     }
     .our-services__title__half__phone {
-        top: -40%;
+        top: -85%;
         left: 8%;
-        width: 73%;
+        width: 65%;
+        height: auto;
     }
     .our-services__title__half__raucai {
-        top: -18%;
+        top: -65%;
         left: auto;
     }
-    #footer {
-        padding-top: 10rem;
-    }
-    #dowload-apps {
-        height: 1200px;
+    .slider-wrapper__item--position {
+        height: auto;
+        /* width: auto; */
+        top: -26%;
+        left: 41%;
     }
     .advance-booking__img-right {
-        width: 30%;
+        width: 25%;
+    }
+    .advance-booking__content {
+        height: auto;
+        padding: 0;
+        width: 80%;
+    }
+    #advance-booking {
+        height: 40rem;
+    }
+    .advance-booking__img-left {
+        width: 72%;
+        left: -36%;
+        top: -43%;
+        height: 178%;
+    }
+    form.example .button--small {
+        padding: 5px 30px;
+        height: 60%;
+    }
+    .form--size-m {
+        height: 4rem;
+    }
+    form.example button {
+        top: 20%;
+    }
+    .advance-booking__content__box {
+        justify-content: flex-end;
+    }
+    #our-services {
+        padding-top: 5rem;
+    }
+    .our-services__title p {
+        margin: 2rem;
+    }
+    .our-services__title h3 {
+        margin-left: 1rem;
+    }
+    .our-services__title__half__content__img-box {
+        padding: 6%;
+    }
+    .our-services__title__half__text {
+        margin: 0 1rem;
+        text-align: left;
+    }
+    .background__margin {
+        margin: 0;
+    }
+    .Explore-our-foods__title p {
+        margin-bottom: 2rem;
+    }
+    .our-services__title__half p {
+        padding-left: 1rem;
+    }
+    .google__wrapper {
+        padding-left: 0;
+    }
+    .footer__img {
+        height: 100%;
+        width: 50%;
+        left: -20%;
+        top: 0;
+    }
+    .footer__content {
+        margin: 0;
+    }
+    .footer__content .footer__content__title__p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 2rem;
+    }
+    .example__email {
+        margin: 2rem;
+    }
+    .footer__content ul {
+        padding: 0;
     }
 }
